@@ -22,6 +22,8 @@ export async function up(pgm: MigrationBuilder): Promise<void> {
       type: "jsonb",
       notNull: true,
     },
+  }, {
+    ifNotExists: true
   });
 
   pgm.createConstraint("orders", "orders_pk", {

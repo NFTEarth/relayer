@@ -54,6 +54,9 @@ export class Seaport {
         hostname = "testnets-api.opensea.io";
         network = "rinkeby";
         break;
+      case 10:
+        network = "optimism";
+        break;
 
       case 137:
         network = "matic";
